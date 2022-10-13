@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inflation calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="background-overlay">
+
+		<h1>Inflation calculator</h1>
+
+		<div class="container">
+			<h3>Inflation rate: <input type="number" min="0.1" id="inflationRate"> %</h3> <br>
+			<h3>Calculate how much <input type="number" min="1" id="money"> € will be worth 
+				<input type="number" min="1" id="years"> years?</h3>
+
+			<button onclick="inflationCalculator()">Calculate</button>
+		</div>
+		<div class="header" id="notesDiv">
+			<h3>Notes: <input type="text" id="notesInput" class="inputClass" placeholder="Write your note"><br>
+			<button onclick="AddButton()" id="addButton" class="addBtn">Add</button>
+			<ul id="notesUl">
+			  </ul>
+
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
